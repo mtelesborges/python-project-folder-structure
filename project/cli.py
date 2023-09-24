@@ -1,4 +1,4 @@
-from cli import cli
+from project.cli import cli
 
 if __name__ == '__main__':
     cli()

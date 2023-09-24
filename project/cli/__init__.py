@@ -1,5 +1,5 @@
 import click
-from cli.fibonacci import fibonacci
+from project.cli.fibonacci import fibonacci
 
 
 @click.group()
