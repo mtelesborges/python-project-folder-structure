@@ -1,4 +1,5 @@
 import click
+
 from project.cli.fibonacci import fibonacci
 
 
