@@ -22,6 +22,7 @@
   - [x] [taskipy](https://github.com/taskipy/taskipy)
 - Tests
   - [x] [pytest](https://docs.pytest.org/en/7.4.x/)
+  - [x] [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/)
 - Code formatting
   - [x] To remove not used variables: [autoflake](https://github.com/PyCQA/autoflake)
   - [x] Code formatting: [blue](https://blue.readthedocs.io/en/latest/)
@@ -38,9 +39,12 @@
   - [x] Mongodb orm: [pymongo](https://pymongo.readthedocs.io/en/stable/)
   - [x] Migrations manager: [alembic](https://alembic.sqlalchemy.org/en/latest/)
 - Wsgi server
-  - [x] Linux: [gunicorn](https://gunicorn.org/)
+  - [x] [gunicorn](https://gunicorn.org/)
 - Api
-  - [x] Flask
+  - [x] [flask](https://flask.palletsprojects.com/en/2.3.x/)
+- Container
+  - [x] [docker](https://www.docker.com/)
+  - [x] [docker-compose](https://docs.docker.com/compose/)
 
 ## Folder and file structures
 ```
@@ -63,6 +67,7 @@
 |- .editorconfig
 |- .gitignore
 |- docker-compose.yml
+|- Dockerfile
 |- pyproject.toml
 |- README.md
 ```
@@ -125,10 +130,14 @@ lint = "autoflake --in-place --exclude=*/migrations/* --remove-all-unused-import
 poetry shell
 ```
 
-- Executing a task
+- Executing lint task
 ```shell
-# To execute a task, you just need to type the command "task" followed by its name
 task lint
+```
+
+- Executing test task
+```shell
+task test
 ```
 
 - Executing a cli command
