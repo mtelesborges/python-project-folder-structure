@@ -1,7 +1,20 @@
-# Python project scratch
-<p>This project contain a basic architectural definition for to initializing a Python application. It considers tools that I know personally, so if you think something should be improved, fell free to make suggestions.</p>
+<p align="center">
+  <img src="assets/python.png" alt="Python"/>
+</p>
+<p align="center"><a href="https://www.flaticon.com/free-icons/python-file">Icon by Flat Icons</a></p>
+<h1 align="center">Python project scratch</h1>
 
-## Tools:
+> This project contain a basic architectural definition for to initializing a Python application. It considers tools that I know personally, so if you think something should be improved, fell free to make suggestions.
+
+<br />
+
+## Table of contents
+- [Tools](#tools)
+- [Folder and file structures](#folder-and-file-structures)
+- [Environment configuring](#environment-configuring)
+- [How to use](#how-to-use)
+
+## Tools
 - Environment manager
   - [x] [poetry](https://python-poetry.org/)
   - [ ] [hatch](https://hatch.pypa.io/latest/)
@@ -17,9 +30,9 @@
   - [x] [click](https://click.palletsprojects.com/en/8.1.x/)
   - [ ] [typer](https://typer.tiangolo.com/)
 - Task scheduling
+  - [x] [celery](https://typer.tiangolo.com/)
   - [ ] [schedule](https://schedule.readthedocs.io/en/stable/)
   - [ ] [python-crontab](https://gitlab.com/doctormo/python-crontab/)
-  - [x] [celery](https://typer.tiangolo.com/)
 - Database
   - [x] Relational orm: [sqlAlchemy](https://www.sqlalchemy.org/)
   - [x] Mongodb orm: [pymongo](https://pymongo.readthedocs.io/en/stable/)
@@ -29,7 +42,7 @@
 - Api
   - [x] Flask
 
-## Folder and file structure
+## Folder and file structures
 ```
 
 |- assets
@@ -107,6 +120,10 @@ lint = "autoflake --in-place --exclude=*/migrations/* --remove-all-unused-import
 ```
 
 ## How to use
+- Activating the environment
+```shell
+poetry shell
+```
 
 - Executing a task
 ```shell
@@ -116,5 +133,5 @@ task lint
 
 - Executing a cli command
 ```shell
-python cli.py --help
+python project/cli.py --help
 ```
