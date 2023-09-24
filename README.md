@@ -3,9 +3,10 @@
 </p>
 <p align="center"><a href="https://www.flaticon.com/free-icons/python-file">Icon by Flat Icons</a></p>
 <h1 align="center">Python project scratch</h1>
-<p align="center">This project contain a basic architectural definition for to initializing a Python application. It considers tools that I know personally, so if you think something should be improved, fell free to make suggestions.</p>
 
+> This project contain a basic architectural definition for to initializing a Python application. It considers tools that I know personally, so if you think something should be improved, fell free to make suggestions.
 
+<br />
 
 ## Table of contents
 - [Tools](#tools)
